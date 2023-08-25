@@ -6,9 +6,9 @@ const News = require("./models/News");
 // Importing Routes
 const OpenAIRoute = require("./routes/OpenAIRoute");
 const NewsRoute = require("./routes/NewsRoute");
-
-const MONGODB_URI = `mongodb+srv://${process.env.MONGODB_ATLAS_USERNAME}:${process.env.MONGODB_ATLAS_PASSWORD}@projects.f7s6vqh.mongodb.net/${process.env.MONGODB_ATLAS_COLLECTION}`;
+const FacebookRoute = require("./routes/FacebookRoute");
 // Connection to Database
+const MONGODB_URI = `mongodb+srv://${process.env.MONGODB_ATLAS_USERNAME}:${process.env.MONGODB_ATLAS_PASSWORD}@projects.f7s6vqh.mongodb.net/${process.env.MONGODB_ATLAS_COLLECTION}`;
 mongoose.set("strictQuery", false);
 mongoose
   .connect(MONGODB_URI)
@@ -30,3 +30,4 @@ app.use(bodyParser.json());
 // Hamro Course Faculty Routes
 app.use("/api", OpenAIRoute);
 app.use("/api", NewsRoute);
+app.use("/api", FacebookRoute);
