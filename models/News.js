@@ -8,7 +8,6 @@ const newsItemSchema = new Schema({
   },
   description: {
     type: String,
-    required: true,
   },
   url: {
     type: String,
