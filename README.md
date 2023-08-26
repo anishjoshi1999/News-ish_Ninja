@@ -1,4 +1,4 @@
-# News Curator and Publisher Project
+# News-ish Ninja project
 
 Welcome to the **News-ish Ninja project**! This project aims to fetch the latest news using the NewsAPI, curate important news using OpenAI, and then publish these curated news articles on a Facebook page using the Facebook Graph API.
 
@@ -20,7 +20,7 @@ Create a `.env` file in the project root and add the following variables:
 - `FACEBOOK_PAGE_ID`: The ID of your Facebook page.
 - `ACCESS_TOKEN`: Your Facebook Graph API access token.
 - `NEWS_API_KEY`: Your NewsAPI API key.
-- `NEWS_TOPICS`: Comma-separated list of topics to fetch news about.
+- `NEWS_TOPICS`: Provide a preferred news category (Only 1) for retrieval: [business, bitcoin, technology, sports]
 - `MONGODB_ATLAS_USERNAME`: Your MongoDB Atlas username.
 - `MONGODB_ATLAS_PASSWORD`: Your MongoDB Atlas password.
 - `MONGODB_ATLAS_COLLECTION`: The name of the MongoDB Atlas collection.
